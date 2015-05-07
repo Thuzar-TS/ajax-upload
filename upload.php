@@ -28,12 +28,6 @@
 	    break;
 	  }
 	}
-	$.ajax({
-                url: 'http://localhost/php/ajax/ajaxupload/upload.php',
-                type: 'POST',
-                data: datas,
-                processData: false,
-                contentType: false
-            });
+	
             
  ?>

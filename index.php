@@ -28,6 +28,13 @@
                 	var f = myFile.files[i];
                	datas.append('files[]', f);
             }
+            $.ajax({
+                url: 'http://localhost/php/ajax/ajaxupload/upload.php',
+                type: 'POST',
+                data: datas,
+                processData: false,
+                contentType: false
+            });
         });
 	</script>
 </body>
